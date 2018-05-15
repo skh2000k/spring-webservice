@@ -14,14 +14,13 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
 
 group = 'com.msjump'
 version = '0.0.2'
 sourceCompatibility = 1.8
 
 repositories {
-	jcenter()
+	mavenCentral()
 }
 
 //Spring Boot Overriding
@@ -35,8 +34,6 @@ dependencies {
 	runtime('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile 'junit:junit:4.12'
-    compile 'junit:junit:4.12'
 }
 sourceSets {
     main {
