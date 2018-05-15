@@ -21,7 +21,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-	mavenCentral()
+	jcenter()
 }
 
 //Spring Boot Overriding
@@ -35,7 +35,8 @@ dependencies {
 	runtime('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile("junit:junit")
+    testCompile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
 }
 sourceSets {
     main {
