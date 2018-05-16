@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/skh2000k/spring-webservice.svg?branch=master)](https://travis-ci.org/skh2000k/spring-webservice)
